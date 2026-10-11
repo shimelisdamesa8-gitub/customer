@@ -1,0 +1,42 @@
+[2026-08-15 22:35:12] Gmail SMTP is not configured. Put your Google App Password in config/mail.php.
+[2026-08-15 22:40:43] SMTP App Password rejected: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5b1f17b1804b1-499899bff2csm98839135e9.7 - gsmtp
+
+[2026-08-15 22:40:52] SMTP App Password rejected: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ffacd0b85a97d-4815f2b1d9bsm15652033f8f.24 - gsmtp
+
+[2026-08-15 22:41:15] SMTP App Password rejected: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ffacd0b85a97d-4815f21a31dsm16959936f8f.9 - gsmtp
+
+[2026-08-17 22:18:07] SMTP ssl attempt: SMTP App Password rejected: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5b1f17b1804b1-4998777a4bdsm199944365e9.0 - gsmtp
+
+[2026-08-17 22:18:10] SMTP starttls attempt: SMTP App Password rejected: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ffacd0b85a97d-482a5a31396sm2813853f8f.2 - gsmtp
+
+[2026-08-17 22:20:08] SMTP ssl attempt: SMTP App Password rejected: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ffacd0b85a97d-482a5a31543sm3206017f8f.4 - gsmtp
+
+[2026-08-17 22:20:12] SMTP starttls attempt: SMTP App Password rejected: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5b1f17b1804b1-4999d10be27sm38569605e9.14 - gsmtp
+
+[2026-08-17 22:27:13] SMTP ssl connection failed: [10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2026-08-17 22:27:18] SMTP starttls attempt: SMTP App Password rejected: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5b1f17b1804b1-49996176b95sm98356955e9.10 - gsmtp
+
+[2026-09-08 09:22:12] Gmail SMTP is not configured. Put your Google App Password in config/mail.php.
+[2026-09-25 14:46:32] Gmail SMTP is not configured. Put your Google App Password in config/mail.php.
+[2026-09-25 16:16:34] SMTP ssl attempt: SMTP App Password rejected: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-49ff2884552sm45830315e9.10 - gsmtp
+
+[2026-09-25 16:16:35] SMTP starttls attempt: SMTP App Password rejected: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-49ff069ceebsm73424295e9.3 - gsmtp
+
+[2026-09-26 13:56:30] SMTP is not configured. Set a valid Gmail address and Gmail App Password in config/mail.php or environment variables.
+[2026-09-26 20:09:11] SMTP is not configured. Set a valid Gmail address and Gmail App Password in config/mail.php or environment variables.
+[2026-09-27 10:40:51] SMTP ssl attempt: SMTP App Password rejected: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4a0016fd85fsm43271125e9.1 - gsmtp
+
+[2026-09-27 10:40:54] SMTP starttls attempt: SMTP App Password rejected: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-4887a34a76fsm20010743f8f.7 - gsmtp
+

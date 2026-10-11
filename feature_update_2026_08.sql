@@ -1,0 +1,6 @@
+-- Customer priority selection, profile approval workflow, feedback and branding colors
+ALTER TABLE users ADD COLUMN IF NOT EXISTS phone VARCHAR(40) NULL;
+CREATE TABLE IF NOT EXISTS profile_change_requests (request_id INT AUTO_INCREMENT PRIMARY KEY,user_id INT NOT NULL,full_name VARCHAR(100) NOT NULL,email VARCHAR(190) NULL,phone VARCHAR(40) NULL,profile_photo VARCHAR(255) NULL,status ENUM('Pending','Approved','Rejected') NOT NULL DEFAULT 'Pending',requested_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,reviewed_at DATETIME NULL,reviewed_by INT NULL,INDEX(user_id,status),CONSTRAINT fk_pcr_user FOREIGN KEY(user_id) REFERENCES users(user_id) ON DELETE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS customer_feedback (feedback_id INT AUTO_INCREMENT PRIMARY KEY,full_name VARCHAR(100) NOT NULL,email VARCHAR(190) NULL,message TEXT NOT NULL,status ENUM('New','Reviewed') NOT NULL DEFAULT 'New',created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO site_settings(setting_key,setting_value) VALUES ('primary_color','#003DA5'),('secondary_color','#EAAA00') ON DUPLICATE KEY UPDATE setting_value=VALUES(setting_value);
+UPDATE services SET status='Inactive' WHERE LOWER(TRIM(service_name))='atm service';
